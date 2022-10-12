@@ -1,4 +1,4 @@
-
+import { firePottery } from "./Kiln.js"
 
 let potteryToSell = []
 
@@ -18,6 +18,7 @@ export const toSellOrNotToSell = (potteryObject) => {
 export const usePottery = () => { 
     return potteryToSell
 }
+
 
 
 

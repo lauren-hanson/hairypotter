@@ -7,6 +7,9 @@ import { toSellOrNotToSell } from "./PotteryCatalog.js"
 
 import { usePottery } from "./PotteryCatalog.js"
 
+import { PotteryList } from "./PotteryList.js"
+
+
 // Make 5 pieces of pottery at the wheel
 let mug = makePottery("mug", 3, 2)
 let cup = makePottery("cup", 6, 5)
@@ -21,7 +24,7 @@ let vase = makePottery("vase", 6, 7)
 // console.log(vase) 
 
 
-// Fire each piece of pottery in the kiln
+//Fire each piece of pottery in the kiln
 let firedMug = firePottery(mug, 2500)
 let firedCup = firePottery(cup, 2000)
 let firedPlate = firePottery(plate, 2000) 
@@ -36,15 +39,30 @@ let firedVase = firePottery(vase, 2000)
 
 
 // Determine which ones should be sold, and their price
-// console.log(toSellOrNotToSell(mug))
-// console.log(toSellOrNotToSell(cup))
-// console.log(toSellOrNotToSell(plate))
-// console.log(toSellOrNotToSell(bowl))
-// console.log(toSellOrNotToSell(vase))
+toSellOrNotToSell(mug)
+toSellOrNotToSell(cup)
+toSellOrNotToSell(plate)
+toSellOrNotToSell(bowl)
+toSellOrNotToSell(vase)
 
-// console.log(usePottery())
+console.log(usePottery())
 
 // Invoke the component function that renders the HTML list
+const potteryForSale = usePottery() 
+
+console.log(potteryForSale)
+
+for (const pottery of potteryForSale) { 
+    console.log(pottery) 
+}
+
+const parentHTMLElement = document.querySelector(".PotteryList")
+const htmlString = `<div>${PotteryList()}</div>`
+
+parentHTMLElement.innerHTML = htmlString
+
+
+
 
 
 

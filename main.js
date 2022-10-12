@@ -36,13 +36,13 @@ let firedVase = firePottery(vase, 2000)
 
 
 // Determine which ones should be sold, and their price
-console.log(toSellOrNotToSell(mug))
-console.log(toSellOrNotToSell(cup))
-console.log(toSellOrNotToSell(plate))
-console.log(toSellOrNotToSell(bowl))
-console.log(toSellOrNotToSell(vase))
+// console.log(toSellOrNotToSell(mug))
+// console.log(toSellOrNotToSell(cup))
+// console.log(toSellOrNotToSell(plate))
+// console.log(toSellOrNotToSell(bowl))
+// console.log(toSellOrNotToSell(vase))
 
-
+// console.log(usePottery())
 
 // Invoke the component function that renders the HTML list
 
